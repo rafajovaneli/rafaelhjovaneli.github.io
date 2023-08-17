@@ -7,7 +7,18 @@
     <title>Curriculum de Rafael Hernandes Jovaneli</title>
     <!-- Inclusão do Bootstrap via CDN -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Inclusão do Font Awesome para ícones -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
+     body {
+            background-color: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .navbar {
+            margin-bottom: 50px;
+        }
+
         .company-title {
             font-weight: bold;
         }
@@ -20,30 +31,58 @@
             border-bottom: 1px solid #ddd;
             margin-bottom: 20px;
         }
+
+        .list-icon {
+            margin-right: 8px;
+        }
+
+        .animated-fade-in {
+            animation: fadeIn 1.5s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="container mt-5">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">RAFAEL H. JOVANELI</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="mailto:rafajovaneli@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tel:+5511993903697"><i class="fas fa-phone"></i> Ligue para mim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5 animated-fade-in">
         <header class="text-center mb-5">
             <h1>RAFAEL HERNANDES JOVANELI</h1>
             <p>Osasco 06065210 | (11) 99390-3697 | <a href="mailto:rafajovaneli@gmail.com">rafajovaneli@gmail.com</a></p>
         </header>
 
         <section class="mb-4">
-            <h3 class="section-header">COMPETÊNCIAS</h3>
+            <h3 class="section-header">COMPETÊNCIAS <i class="fas fa-clipboard-list"></i></h3>
             <ul>
-                <li>Fluência em inglês. Espanhol Básico. Francês Básico.</li>
-				
-				<li>Experiência em JAVA versões 6, 7, 8, 11 e 17.</li>
-				
-				<li>Vivência em programação reativa (Spring Webflux).</li>
-				
-				<li>Conhecimentos sólidos em metodologias Ágeis.</li>
-				
-				<li>Proativo, organizado, dinâmico, comprometido e com ótima habilidade de comunicação.</li>
-				
-				<li>Experiência com coordenação e liderança de equipes.</li>
+                <!-- Adicionando ícones para cada item da lista -->
+                <li><i class="fas fa-language list-icon"></i> Fluência em inglês. Espanhol Básico. Francês Básico.</li>
+                <li><i class="fab fa-java list-icon"></i> Experiência em JAVA versões 6, 7, 8, 11 e 17.</li>
+                <li><i class="fas fa-cogs list-icon"></i> Vivência em programação reativa (Spring Webflux).</li>
+                <li><i class="fas fa-tasks list-icon"></i> Conhecimentos sólidos em metodologias Ágeis.</li>
+                <li><i class="fas fa-user-check list-icon"></i> Proativo, organizado, dinâmico, comprometido e com ótima habilidade de comunicação.</li>
+                <li><i class="fas fa-users-cog list-icon"></i> Experiência com coordenação e liderança de equipes.</li>
             </ul>
         </section>
 
@@ -164,10 +203,12 @@
 
     </div>
 
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <!-- Scripts do Bootstrap -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <!-- Script do Font Awesome -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 
 </html>
